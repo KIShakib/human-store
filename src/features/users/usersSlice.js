@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const usersApi = createApi({
     reducerPath: 'usersApi',
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://human-store-server.vercel.app" }),
     tagTypes: ['added-user', 'delete-user', 'edit-user'],
     endpoints: (builder) => ({
         getUsers: builder.query({
