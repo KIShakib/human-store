@@ -26,7 +26,7 @@ const Modal = ({ setModalOpen, modalOpen, user, editUserInfo }) => {
                     <div className="flex justify-between items-center pb-3 px-6">
                         <p className="text-2xl font-semibold font-barlow tracking-wide">Edit Details</p>
                         <div className="modal-close cursor-pointer z-50">
-                            <button className='w-8 h-8 border flex justify-center items-center rounded-full border-gray-400' onClick={() => setModalOpen(!modalOpen)}>
+                            <button className='w-8 h-8 border flex justify-center items-center rounded-full border-gray-400 hover:bg-red/50 duration-200' onClick={() => setModalOpen(!modalOpen)}>
                                 <svg className="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18">
                                     <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
                                 </svg>
@@ -61,7 +61,7 @@ const Modal = ({ setModalOpen, modalOpen, user, editUserInfo }) => {
                             <div className="flex justify-center">
                                 <button
                                     type='submit'
-                                    className="border px-4 font-semibold rounded">
+                                    className="border px-8 font-semibold rounded-sm hover:bg-primary duration-200 hover:text-white">
                                     Edit
                                 </button>
                             </div>

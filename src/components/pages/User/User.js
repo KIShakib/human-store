@@ -50,10 +50,10 @@ const User = ({ user, handleDeleteUser }) => {
                 <img className='w-52 h-52' src={image} alt="" />
             </div>
             <div className='p-6 flex flex-col gap-y-1 tracking-wide'>
-                <h2 className='font-bold tracking-widest text-lg'>{name}</h2>
+                <h2 className='font-bold tracking-widest text-lg font-barlow'>{name}</h2>
                 <div className='flex items-center gap-x-2 text-sm'>
                     <img className='w-4' src={phoneLogo} alt="" />
-                    <h4>{mobileNumber}</h4>
+                    <h4 className='font-barlow font-medium text-sm tracking-widest'>{mobileNumber}</h4>
                 </div>
             </div>
             <div className='bg-[#F5F5F5] flex justify-evenly py-3'>
@@ -72,15 +72,16 @@ const User = ({ user, handleDeleteUser }) => {
                     <button
                         onClick={() => setModalOpen(!modalOpen)} className=""
                     >
-                        <FiEdit />
+                        <FiEdit className='hover:text-blue duration-200' />
                     </button>
                 </div>
                 <div className='opacity-25'>|</div>
                 <div className='flex items-center'>
                     <button
+
                         onClick={() => handleDeleteUser(user?._id)}
                     >
-                        <RiDeleteBinLine />
+                        <RiDeleteBinLine className='hover:text-red duration-200 text-lg' />
                     </button>
                 </div>
             </div>

@@ -16,6 +16,9 @@
 - Redux
 - Redux Toolkit
 - React Hook Form
+- Node.js
+- Express.js
+- MongoDB
 - Firebase
 - Vercel
 
